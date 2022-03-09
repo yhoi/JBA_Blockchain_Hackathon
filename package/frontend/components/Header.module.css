@@ -1,0 +1,26 @@
+.header{
+    background: #17a2b8;
+  }
+  
+  .title{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  .hamburger{
+    text-align: right;
+    height: 30px;
+    width: 30px !important;
+  }
+  
+  .login:hover{
+    color: #17a2b8;
+    background: #ffffff;
+  }
+ 
+.label{
+  width: 90%;
+  height: 50px;
+  background-color: #ffffff;
+}
