@@ -22,12 +22,12 @@ module.exports = {
     localhost: {
       url:"http://localhost:8545",
       chainId:31337,
-      accounts: ['c766ab33f59d0e81ba1d22d5435ff840b742c0ec4dcf612bed47c77cd3ad2ce7']
+      accounts: [process.env.PrivateKey]
     },
     shibuya: {
       url:"https://rpc.shibuya.astar.network:8545",
       chainId:81,
-      accounts: ['c766ab33f59d0e81ba1d22d5435ff840b742c0ec4dcf612bed47c77cd3ad2ce7']
+      accounts: [process.env.PrivateKey]
     }
   }
 };
