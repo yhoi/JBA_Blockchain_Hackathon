@@ -10,7 +10,7 @@ import React from 'react'
 const contractAddress ='0x6271aeBBb875E0667A34c776eFe76A7B5F0C1F3E'
 let connectingAccounts,web3 
 
-const enable = async () => {
+const connectWallet = async () => {
   const provider = await detectEthereumProvider({ mustBeMetaMask: true });
   if (provider && window.ethereum?.isMetaMask) {
     console.log('connect to wallet');
@@ -63,7 +63,7 @@ export default function Header(){
       <AccordionPanel pb={4} >
         <Box textAlign='center'>
         <Link href=''>
-          <Button className={styles.login} color='white' variant='outline' borderColor='white' width='90%' onClick={enable} > 
+          <Button className={styles.login} color='white' variant='outline' borderColor='white' width='90%' onClick={connectWallet} > 
             Connect Wallet
           </Button>
         </Link>
