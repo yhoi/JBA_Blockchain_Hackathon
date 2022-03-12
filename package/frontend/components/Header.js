@@ -4,9 +4,8 @@ import {Box,Accordion,AccordionItem,AccordionButton,AccordionPanel,AccordionIcon
 import { HamburgerIcon,AddIcon,ExternalLinkIcon, RepeatIcon,EditIcon ,ChevronDownIcon } from '@chakra-ui/icons' 
 import Link from 'next/link'
 import styles from'./Header.module.css'
-import {abi} from '../../contract/artifacts/contracts/KOL.sol/KOL.json'
+import {abi} from '../../contract/abi.json'
 import React from 'react'
-import Displayingaddress from './Displayingaddress'
 
 const contractAddress ='0x6271aeBBb875E0667A34c776eFe76A7B5F0C1F3E'
 let connectingAccounts,web3 
